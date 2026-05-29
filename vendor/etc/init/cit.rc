@@ -1,0 +1,53 @@
+on boot
+    chmod 0644 /data/vendor/charge_logger/charge_logger_a.csv
+    chown root system /data/vendor/charge_logger/charge_logger_a.csv
+
+# add for sar nv
+on post-fs-data
+   write  /mnt/vendor/persist/rfs/msm/mpss/00029619 ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00029619
+   write  /mnt/vendor/persist/rfs/msm/mpss/00030007 ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00030007
+   write  /mnt/vendor/persist/rfs/msm/mpss/00029624 ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00029624
+   write  /mnt/vendor/persist/rfs/msm/mpss/00021321.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00021321.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00021322.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00021322.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00021323.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00021323.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00021324.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00021324.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00021325.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00021325.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00025028.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00025028.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00025029.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00025029.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00025030.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00025030.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00025031.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00025031.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00025063.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00025063.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00025111.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00025111.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00028869.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00028869.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00028879.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00028879.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00028880.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00028880.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00028881.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00028881.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00028882.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00028882.bin
+   write  /mnt/vendor/persist/rfs/msm/mpss/00028918.bin ""
+   chmod  0666 /mnt/vendor/persist/rfs/msm/mpss/00028918.bin
+   chmod  0707 /mnt/vendor/persist/rfs
+   chmod  0707 /mnt/vendor/persist/rfs/msm
+   chmod  0707 /mnt/vendor/persist/rfs/msm/mpss
+
+on post-fs-data
+    # add for gsort
+    chmod 0666 /sys/class/qvga/qvga/rear_qvga

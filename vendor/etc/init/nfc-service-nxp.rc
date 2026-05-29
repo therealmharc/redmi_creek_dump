@@ -1,0 +1,17 @@
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+    class early_hal
+    user nfc
+    group nfc drmrpc system
+    disabled
+
+on post-fs && property:ro.boot.product.hardware.sku=o19ae
+    start vendor.nfc_hal_service
+
+on post-fs && property:ro.boot.product.hardware.sku=o19ap
+    start vendor.nfc_hal_service
+
+on post-fs && property:ro.boot.product.hardware.sku=o19aeerp
+    start vendor.nfc_hal_service
+
+on post-fs && property:ro.boot.product.hardware.sku=o19aperp
+    start vendor.nfc_hal_service

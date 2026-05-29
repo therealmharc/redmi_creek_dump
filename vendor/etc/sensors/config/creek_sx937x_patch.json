@@ -1,0 +1,108 @@
+{
+  "config":{
+        "hw_platform": ["IDP"],
+        "soc_id": ["518"]
+  },
+  "sx937x": {
+    "owner": "sns_sx937x",
+	".patch_config":{
+	  "owner": "sns_sx937x",
+	  "Is_config":{ "type": "int", "ver": "1",
+		"data": "0"
+	  },
+	  "Is_debug":{ "type": "int", "ver": "0",
+		"data": "0"
+	  },
+	  "0x8680":{ "type": "int", "ver": "0",
+		"data": "0x611100A5"
+	  },
+	  "0x8684":{ "type": "int", "ver": "0",
+		"data": "0xA12C0000"
+	  },
+	  "0x8688":{ "type": "int", "ver": "0",
+		"data": "0x8C62636C"
+	  },
+	  "0x868C":{ "type": "int", "ver": "0",
+		"data": "0x000241C0"
+	  },
+	  "0x8690":{ "type": "int", "ver": "0",
+		"data": "0x80C69400"
+	  },
+	  "0x8694":{ "type": "int", "ver": "0",
+		"data": "0x40000000"
+	  },
+	  "0x8698":{ "type": "int", "ver": "0",
+		"data": "0x63949006"
+	  },
+	  "0x869C":{ "type": "int", "ver": "0",
+		"data": "0xFFFFFF0F"
+	  },
+	  "0x86A0":{ "type": "int", "ver": "0",
+		"data": "0x2C78C12C"
+	  },
+	  "0x86A4":{ "type": "int", "ver": "0",
+		"data": "0x80A044A1"
+	  },
+	  "0x86A8":{ "type": "int", "ver": "0",
+		"data": "0xFF9FED3F"
+	  },
+	  "0x86AC":{ "type": "int", "ver": "0",
+		"data": "0x80D87800"
+	  },
+	  "0x86B0":{ "type": "int", "ver": "0",
+		"data": "0x839E0300"
+	  },
+	  "0x86B4":{ "type": "int", "ver": "0",
+		"data": "0xFFFFFDFF"
+	  },
+	  "0x86B8":{ "type": "int", "ver": "0",
+		"data": "0xA5226364"
+	  },
+	  "0x86BC":{ "type": "int", "ver": "0",
+		"data": "0x00887600"
+	  },
+	  "0x86C0":{ "type": "int", "ver": "0",
+		"data": "0x00000000"
+	  },
+	  "0x86C4":{ "type": "int", "ver": "0",
+		"data": "0xC2A46C18"
+	  },
+	  "0x86C8":{ "type": "int", "ver": "0",
+		"data": "0x6CD00C6E"
+	  },
+	  "0x86CC":{ "type": "int", "ver": "0",
+		"data": "0x6408C084"
+	  },
+	  "0x86D0":{ "type": "int", "ver": "0",
+		"data": "0x00839FAF"
+	  },
+	  "0x86D4":{ "type": "int", "ver": "0",
+		"data": "0xD8000002"
+	  },
+	  "0x86D8":{ "type": "int", "ver": "0",
+		"data": "0x46FCFF80"
+	  },
+	  "0x4340":{ "type": "int", "ver": "0",
+		"data": "0x11508084"
+	  },
+	  "0x4344":{ "type": "int", "ver": "0",
+		"data": "0x119CC4C4"
+	  },
+	  "0x4348":{ "type": "int", "ver": "0",
+		"data": "0x11CCC8CC"
+	  },
+	  "0x434C":{ "type": "int", "ver": "0",
+		"data": "0x2224D0D8"
+	  },
+	  "0x4354":{ "type": "int", "ver": "0",
+		"data": "0x00000600"
+	  },
+	  "0x4350":{ "type": "int", "ver": "0",
+		"data": "0x0000000F"
+	  },
+	  "0xFFFF":{ "type": "int", "ver": "0",
+		"data": "0xFFFFFFFF"
+	  }
+	}
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "config":{
+      "hw_platform": ["IDP"],
+      "soc_id": ["518"],
+      "ro.boot.product.hardware.sku":["o19aeerp","o19aperp"]
+    },
+    "sar_algo_1": {
+      "owner": "sar_algo_1",
+      ".sar_config":{
+        "owner": "sar_algo_1",
+        "use_step": {
+          "ver": "0", "type": "flt", "data": "1"
+        },
+        "step_limit": {
+          "ver": "0", "type": "flt", "data": "100"
+        },
+        "threhold_cs4_min": {
+          "ver": "1", "type": "flt", "data": "3361.0"
+        },
+        "threhold_cs4_max": {
+          "ver": "1", "type": "flt", "data": "4802.0"
+        }
+      }
+    }
+  }

@@ -1,0 +1,11 @@
+on fs
+    chmod 0660 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
+
+on post-fs-data
+    chmod 0666 /dev/nq-nci
+    chown nfc system /dev/nq-nci
+    mkdir /data/vendor 0777 nfc nfc
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+    mkdir /data/vendor/nfc/debug 0755 nfc nfc

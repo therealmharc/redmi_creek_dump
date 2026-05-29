@@ -1,0 +1,66 @@
+{
+    "DynamicPreviewThread": {
+        "qcom": {
+            "slowmontion_1": 4
+        }
+    },
+    "LeakChecker": {
+        "abs_leak_threshold": {
+            "dmabuffer": 1500000,
+            "fd": 2000,
+            "gpu": 600000,
+            "heap": 2000000,
+            "tls": 10000
+        },
+        "diff_leak_threshold": {
+            "dmabuffer": 1000000,
+            "fd": 300,
+            "gpu": 200000,
+            "heap": 1000000,
+            "tls": 300
+        }
+    },
+    "MemoryWatcher": {
+        "abort_threshold": {
+            "dmabuffer": 2000000,
+            "fd": 28000,
+            "gpu": 2000000,
+            "heap": 2000000,
+            "mmap": 50000,
+            "tls": 50000
+        }
+    },
+    "ThreadPoolPolicyParams": {
+        "AsyncPreview": {
+            "category": "Preview",
+            "default_schedule_thread_number": 5,
+            "manager_create_thread_number": 5,
+            "priority": 110
+        },
+        "Aux": {
+            "category": "Aux",
+            "default_schedule_thread_number": 5,
+            "manager_create_thread_number": 5,
+            "priority": 101
+        },
+        "Capture": {
+            "category": "Capture",
+            "default_schedule_thread_number": 5,
+            "manager_create_thread_number": 5,
+            "priority": 117
+        },
+        "Other": {
+            "category": "Other",
+            "default_schedule_thread_number": 1,
+            "manager_create_thread_number": 1,
+            "priority": 116
+        },
+        "Preview": {
+            "category": "Preview",
+            "default_schedule_thread_number": 6,
+            "manager_create_thread_number": 10,
+            "priority": 110
+        }
+    },
+    "version": "1.0"
+}

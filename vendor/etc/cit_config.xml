@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameter>
+  <item name="Config">
+    <!--value = 0x90000 + 7001-->
+    <param key="QCRIL_OEM_HOOK_REQID" value="544289"/>
+    <param key="SupportSingleSIM"    value="true"/>
+    <param key="Supportmodem"    value="true"/>
+    <param key="SupportFM"    value="false"/>
+    <param key="SupportNormal"    value="false"/>
+    <param key="SupportPD"    value="true"/>
+    <param key="SupportUSFID"    value="true"/>
+    <param key="SupportFLASHLIGHT"    value="true"/>
+    <param key="SupportDualSar"    value="false"/>
+    <param key="SupportLightSensor"    value="true"/>
+    <param key="SupportEsim"    value="false"/>
+    <param key="UseDefaultSarSensorTool"    value="false"/>
+    <param key="SupportPowerKey" value="true"/>
+    <param key="SupportPenTest" value="false"/>
+    <param key="SupportTypeC" value="true"/>
+    <param key="SupportSarType" value="33171015"/>
+    <param key="SupportSarSensor1" value="true"/>
+    <param key="SupportTP" value="true"/>
+    <param key="ConnectorType" value="Type-C"/>
+    <param key="TP_60HZ_Path" value="service call SurfaceFlinger 31117 i32 60"/>
+    <param key="HideMenuIdNames" value="gyroscope_cal,camera_cal,fingerprint_cal,sar_auth_item"/>
+  </item>
+  <item name="Camera">
+    <param key="TwinCameraType" value="switch"/>
+    <param key="isSupportQvga" value="true"/>
+  </item>
+  <item name="Charge">
+    <param key="SupportCurrent" value="false"/>
+    <param key="battery_low" value="50"/>
+    <param key="battery_high" value="80"/>
+    <param key="SupportFastCharge" value="false"/>
+    <param key="BatteryIdPath" value="/sys/class/lc_charger/resistance_id"/>
+    <param key="BatteryInfo" value="true"/>
+    <param key="SupportPDChargeType" value="USB_PPS"/>
+    <param key="BatteryMaxCurrent" value="4000000"/>
+    <param key="BatteryMinCurrent" value="700000"/>
+    <param key="ReserveQuickChargeNode" value="/sys/class/power_supply/battery/reverse_quick_charge"/>
+    <param key="ISSpportbattery" value="true"/>
+    <param key="ChargeCC" value="/sys/class/lc_charger/typec_cc_orientation"/>
+    <param key="key_node_charger_type" value="/sys/class/lc_charger/real_type"/>
+  </item>
+  <item name="SecretCode">
+    <param key="WifiLogVer" value="V2"/>
+    <param key ="DiagMode" value="diag,adb"/>
+  </item>
+  <item name="LED">
+    <param key="hasBacklight" value="true"/>
+    <param key="hasWhiteLED" value="false"/>
+    <param key="hasRedLED" value="false"/>
+    <param key="hasGreenLED" value="false"/>
+    <param key="hasBlueLED" value="false"/>
+    <param key="hasBackTorch" value="true"/>
+    <param key="hasBackTorch2" value="false"/>
+    <param key="hasFrontTorch1" value="false"/>
+    <param key="hasBackTorch1_2" value="false"/>
+    <param key="hasKeyLED" value="false"/>
+    <param key="BackTorchFile1" value="/sys/class/leds/led:torch/brightness"/>
+  </item>
+  <item name="SAR_SENSOR">
+    <param key="SarFactoryEnable" value="false"/>
+    <param key="mainDiffIndex" value="0"/>
+    <param key="subDiffIndex" value="3"/>
+    <param key="mMain_dc_cap_index" value="9"/>
+    <param key="mSub_dc_cap_index" value="10"/>
+    <param key="mBase_dc_cap_index" value="12"/>
+    <param key="mTitle_sar_data_collection" value="true"/>
+    <param key="startCalibrateDelay" value="1500"/>
+    <param key="far_near_baseline" value="3500"/>
+  </item>
+  <item name="SoftVersion">
+    <param key="ShowIFAA" value="true"/>
+    <param key="ShowFIDO" value="false"/>
+    <param key="ShowWidevine" value="true"/>
+    <param key="ShowKeybox" value="true"/>
+    <param key="isShowPaInformation" value="true"/>
+    <param key="PaInformationFile" value="/sys/android_audio/audio_pa"/>
+    <param key="isLockDownPath"  value="proc/tp_lockdown_info"/>
+    <param key="InterceptionBatteries" value="false"/>
+    <param key="Batterypath"  value="/sys/class/lc_charger/batt_manufacturer"/>
+    <param key="isShowAudioSwitch" value="true"/>
+    <param key="AudioSwitchPath"  value="/sys/android_audio/audio_switch"/>
+    <param key="ShowBatteryinfo"  value="true"/>
+    <param key="LCMInfoPath"  value="/sys/class/mi_display/disp-DSI-0/panel_info"/>
+  </item>
+  <item name="AutoTest">
+    <param key="memoryInfo" value="false"/>
+    <param key="unsupport_items" value="TEST_UWB, TEST_LEDLIGHT, DIAG_STABILITY, TEST_BATCON, TEST_GYRO, TEST_FRONTFLASH, TEST_WIRELESS_CHARGER, TEST_TOPSPEAKER, TEST_AUX_MIC_TO_EARPIECE, TEST_BACKMIC_TO_EARPIECE, TEST_TOPMIC_TO_EARPIECE, TEST_LOUDSPEAKERPACALIBRATION, TEST_MODEMHARDWARE, TEST_CAMERAHARDWARE, DACA_CAMOTP, TEST_CAMERACALFLAG, TEST_REARSUBCAMERA"/>
+    <param key="camera_param" value="WIDE,FRONT,QVGA"/>
+    <param key="depthname" value="DEPTH"/>
+    <param key="mainname" value="WIDE"/>
+    <param key="frontname" value="FRONT"/>
+    <param key="suport_camera_fuseid" value="true"/>
+    <param key="camera_fuseid_list" value="rearMain,frontMain"/>
+    <param key="isSupport_takeapart" value="true"/>
+  </item>
+  <item name="SarsensorDiff">
+    <param key="main_cap_low" value="213"/>
+    <param key="main_cap_high" value="263"/>
+    <param key="sub_cap_low" value="98"/>
+    <param key="sub_cap_high" value="148"/>
+    <param key="base_cap_low" value="115"/>
+    <param key="base_cap_high" value="165"/>
+    <param key="max_low" value="6000"/> 
+    <param key="max_high" value="12000"/>
+    <param key="C1_max_low" value="8000"/>
+    <param key="C1_max_high" value="16000"/>
+    <param key="isSupportSarSensorTool" value="true"/>
+    <param key="isSupportERPDiffArea" value="1.40.4,1.40.5,1.41.4,1.42.4,1.49.4,1.40.2,1.40.3,1.41.2,1.42.2,1.49.2"/>
+    <param key="erp_main_cap_low" value="213"/>
+    <param key="erp_main_cap_high" value="263"/>
+    <param key="erp_sub_cap_low" value="98"/>
+    <param key="erp_sub_cap_high" value="148"/>
+    <param key="erp_base_cap_low" value="116"/>
+    <param key="erp_base_cap_high" value="166"/>
+    <param key="erp_max_low" value="6500"/> 
+    <param key="erp_max_high" value="13000"/>
+    <param key="erp_C1_max_low" value="10000"/>
+    <param key="erp_C1_max_high" value="20000"/>
+  </item>
+  <item name="CPRamdump">
+    <param key="Cp_Ramdump" value="true"/>
+  </item>
+
+<item name="SarNV">
+    <!--<param key="Test_Path"   value="/mnt/vendor/persist/rfs/msm/mpss/sarnv"/>-->
+    <param key="Test_Path"   value="/mnt/vendor/persist/rfs/msm/mpss"/>
+    <param key="Target_Path2" value="/vendor/rfs/msm/mpss/readonly/firmware/image/modem_pr/sarnv"/>
+    <param key="cmd" value="LctReadWriteNV rfset 4B000400"/>
+    <param key="compare" value="00021321.bin,00021322.bin,00021323.bin,00021324.bin,00021325.bin,00025028.bin,00025029.bin,00025030.bin,00025031.bin,00025063.bin,00025111.bin,00028869.bin,00028879.bin,00028880.bin,00028881.bin,00028882.bin,00028918.bin"/>
+    <param key="Target_Path1" value="/sdcard/sarnv"/>
+    <param key="SarnvSupport" value="true"/>
+    <param key="isSupportSKUsarnvName" value="true"/>
+  </item>
+  
+  <item name="LightSensor">
+    <param key="SCREENBRIGHTNESSSETTINGSMAXIMUM" value="4095"/>
+  </item>
+</parameter>

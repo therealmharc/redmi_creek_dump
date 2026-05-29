@@ -1,0 +1,31 @@
+# Copyright (c) 2017 Xiaomi, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Xiaomi, Inc.
+#
+service displayfeature-hal-1-0 /vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+    class hal
+    user system
+    group system graphics
+    onrestart restart displayfeature
+
+on boot
+    chown system system /sys/devices/virtual/graphics/fb0/hist_event
+
+on post-fs-data
+    chown system system /sys/class/mi_display/disp-DSI-0/mipi_rw
+    chmod 664 /sys/class/mi_display/disp-DSI-0/mipi_rw
+    chown system system /sys/class/mi_display/disp-DSI-0/disp_param
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/disp_param
+    chown system system /sys/class/mi_display/disp-DSI-0/panel_info
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/panel_info
+
+service displayfeature /vendor/bin/displayfeature
+    class late_start
+    user root
+    group root
+on property:init.svc.surfaceflinger=stopped
+    stop displayfeature
+on property:init.svc.surfaceflinger=running
+    start displayfeature
+on property:init.svc.surfaceflinger=restarting
+    stop displayfeature

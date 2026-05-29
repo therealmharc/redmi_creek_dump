@@ -1,0 +1,20 @@
+## missi-user 16 BP2A.250605.031.A3 OS3.0.302.0.WBOMIXM release-keys
+- Manufacturer: xiaomi
+- Platform: bengal
+- Codename: creek
+- Brand: Redmi
+- Flavor: missi-user
+- Release Version: 16
+- Kernel Version: 5.15.178
+- Id: BP2A.250605.031.A3
+- Incremental: OS3.0.302.0.WBOMIXM
+- Tags: release-keys
+- CPU Abilist: arm64-v8a,armeabi-v7a,armeabi
+- A/B Device: true
+- Treble Device: true
+- Locale: en-GB
+- Screen Density: 450
+- Fingerprint: Redmi/creek_global/creek:13/TKQ1.250214.001/OS3.0.302.0.WBOMIXM:user/release-keys
+- OTA version: 
+- Branch: missi-user-16-BP2A.250605.031.A3-OS3.0.302.0.WBOMIXM-release-keys
+- Repo: redmi_creek_dump
